@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+
+        >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soma Africa"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"
+        android:textColor="@color/blue"
+        android:id="@+id/tvwelcome"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exploring The Limits Of Technology"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/red"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tvwelcome"
+            android:id="@+id/tvwelcomes"
+            />
+
+</RelativeLayout>
+</RelativeLayout>

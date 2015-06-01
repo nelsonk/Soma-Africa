@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:background="#ff0b0daf"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose the course type"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/blue"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCIENCES"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/blue"
+        android:id="@+id/rbsciences" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ARTS"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/blue"
+        android:id="@+id/rbarts" />
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/bclasses" />
+</RelativeLayout>
+
+
+</LinearLayout>

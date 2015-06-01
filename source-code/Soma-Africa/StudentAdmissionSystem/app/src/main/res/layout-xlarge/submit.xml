@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+
+        android:layout_width="fill_parent"
+        android:layout_height="60sp"
+        android:background="#ff0b0daf"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Applying for BCM at Lubiri ss"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/blue"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="35dp"
+        android:id="@+id/tvdetail" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Attach Transcript Before you submit"
+        android:textColor="@color/blue"
+        android:id="@+id/textView3"
+        android:textSize="35dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal" />
+    <View
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="5sp"
+        android:background="#ff0b0daf"/>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATTACH FILE"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:textSize="35dp"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        android:id="@+id/battach" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:id="@+id/bsubmit"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

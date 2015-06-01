@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+
+        android:layout_width="fill_parent"
+        android:layout_height="60sp"
+        android:background="#ff0b0daf"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Possible schools and combinations you can do"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textColor="@color/blue"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="35dp"
+        android:id="@+id/tvdetail" />
+    <View
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="5sp"
+        android:background="#ff0b0daf"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="#ff0b0daf"
+
+        android:layout_marginBottom="20sp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/grade_school"
+            android:layout_marginLeft="20dp"
+
+            android:textColor="#ffffff"
+            android:textSize="35sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/grade_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:textSize="30sp"
+        android:layout_marginLeft="20dp"
+        />
+
+</LinearLayout>

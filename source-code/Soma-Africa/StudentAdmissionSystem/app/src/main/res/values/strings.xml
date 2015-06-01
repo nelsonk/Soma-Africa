@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Soma Africa</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_school">Enter School Name</string>
+    <string name="top_school">THE TOP SCHOOLS</string>
+    <string name="grade_school">POSSIBLE SCHOOLS</string>
+    <string name="status">REG STATUS</string>
+    <string name="addsch">ADD SCHOOLS</string>
+    <string name="addcomb">ADD COMBINATION</string>
+    <string name="removesch">REMOVE SCHOOLS</string>
+    <string name="prompt">CHOOSE COURSE TYPE</string>
+    <string name="sign_up"><u><b><i>Sign Up</i></b></u></string>
+    <string name="fbsign_up"><u><b><i>Sign up with facebook</i></b></u></string>
+
+</resources>

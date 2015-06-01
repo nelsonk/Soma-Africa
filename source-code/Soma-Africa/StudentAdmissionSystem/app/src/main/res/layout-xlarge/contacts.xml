@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Provide Your Contact"
+        android:textSize="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:textSize="35dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/tvcontactname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0779564427"
+        android:textSize="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/tvcontactnumber"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Contact"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:id="@+id/bupdatecontact" />
+</LinearLayout>

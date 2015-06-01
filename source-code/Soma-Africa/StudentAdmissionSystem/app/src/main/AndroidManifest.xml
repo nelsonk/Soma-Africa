@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.k.nelie.studentadmissionsystem" >
+
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+
+    	    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    	    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    	    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission android:name="com.hmkcode.android.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.hmkcode.android.gcm.permission.C2D_MESSAGE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/register_button"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+
+        <activity
+            android:name=".Splash_screan"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Welcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.WELCOME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Apply"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.APPLY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Your_grades"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.YOUR_GRADES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Grade"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.GRADE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Course"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.COURSE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Combinations"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.COMBINATIONS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Contacts"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.CONTACTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Submit"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.SUBMIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name=".SignUp"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.SIGNUP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Progress"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PROGRESS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".LoginDetails"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOGINDETAILS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Add_combination"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.ADD_COMBINATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Add_sch"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.ADD_SCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".MyExpandableList"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MYEXPANDABLELIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Facebooksignup"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FACEBOOKSIGNUP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+
+
+  <provider
+      android:authorities="com.neliek.database.provider"
+      android:name="com.neliek.database.provider.MyDBContentProvider">
+
+      </provider>
+
+
+        <receiver android:name="MyBroadcastReceiver">
+            	 <intent-filter>
+                       <action android:name="com.javacodegeeks.android.A_CUSTOM_INTENT">
+                       </action>
+           	     </intent-filter>
+          </receiver>
+
+
+        <receiver
+            android:name="com.com.neliek.GCM.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.hmkcode.android.gcm" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.com.neliek.GCM.GcmMessageHandler" />
+        <service android:name=".MyService" />
+
+
+
+
+           </application>
+
+</manifest>

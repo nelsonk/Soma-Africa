@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:id="@+id/v0"
+        android:background="#ff0b0daf"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Enter Combination Details"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/blue"
+        android:layout_below="@+id/v0"
+        android:id="@+id/tvcombination"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        />
+
+
+
+    <View
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="2sp"
+        android:layout_below="@+id/tvcombination"
+        android:id="@+id/v1"
+        android:background="#ff0b0daf"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/v1"
+        android:id="@+id/lldetails"
+        android:orientation="vertical"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/etadcombschname"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Enter School Name"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10" />
+
+
+
+
+
+        <AutoCompleteTextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/etadcombschname"
+            android:id="@+id/etadtype"
+            android:hint="Enter Course Type"
+            android:textColorHint="@color/blue"
+            android:textColor="@color/blue"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/etadtype"
+            android:id="@+id/etadcomb"
+            android:hint="Enter Combination"
+            android:textColorHint="@color/blue"
+            android:textColor="@color/blue"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/etadcomb"
+            android:id="@+id/etadcutoff"
+            android:hint="Enter Cutoff"
+            android:textColorHint="@color/blue"
+            android:textColor="@color/blue"
+            />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:background="@drawable/button"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/lldetails"
+        android:id="@+id/baddcomb"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+
+</RelativeLayout>

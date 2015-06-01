@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lubiri s s"
+        android:textSize="35sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/blue"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/tvschool" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1st"
+        android:textSize="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+
+        android:textColor="#FF0000"
+        android:id="@+id/tvrank"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="admission still on"
+        android:textSize="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textColor="#FF0000"
+        android:id="@+id/tvstatus" />
+
+    </RelativeLayout>
+</LinearLayout>

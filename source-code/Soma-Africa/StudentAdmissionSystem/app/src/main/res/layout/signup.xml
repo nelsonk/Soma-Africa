@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <View
+
+            android:layout_width="fill_parent"
+            android:layout_height="40sp"
+            android:id="@+id/view0"
+            android:background="#ff0b0daf"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please Fill in all fields to sign up"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/tvcombination"
+                android:textColor="@color/blue"
+                android:layout_below="@+id/view0"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                />
+
+
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="2sp"
+            android:layout_below="@+id/tvcombination"
+            android:id="@+id/view1"
+            android:background="#ff0b0daf"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/view1"
+            android:layout_marginTop="20dp"
+            android:id="@+id/lldetails"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/etsfirstname"
+                android:hint="Enter First Name"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+
+                />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/etssurname"
+                android:hint="Enter Surname"
+                android:textColorHint="@color/blue"
+                android:textColor="@color/blue"
+                />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/etsgender"
+                android:hint="Enter Gender"
+                android:textColorHint="@color/blue"
+                android:textColor="@color/blue"
+                />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+
+                android:gravity="center_horizontal"
+                android:id="@+id/etscountry"
+                android:hint="Enter Country"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+
+                />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/etscity"
+                android:hint="Enter City"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+
+                />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/etsage"
+                android:hint="Enter Birthday"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+
+                />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/etstel"
+                android:hint="Enter Telephone"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+
+                />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/etsemail"
+                android:hint="Enter Email"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/lldetails"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/bssubmit"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        android:text="SUBMIT"
+        />
+
+        </LinearLayout>
+
+
+</RelativeLayout>
+
+</ScrollView>

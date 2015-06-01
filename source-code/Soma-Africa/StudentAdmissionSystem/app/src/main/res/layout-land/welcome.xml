@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soma Africa"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textColor="@color/blue"
+        android:id="@+id/tvwelcome"
+ />
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvwelcome"
+        android:id="@+id/lldetails"
+        android:orientation="vertical"
+        >
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/etusername"
+        android:hint="Enter Username"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/blue"
+
+         />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPassword"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/etpassword"
+        android:hint="Enter Password"
+        android:textColorHint="@color/blue"
+        android:textColor="@color/blue"
+         />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal"
+    android:id="@+id/llbutton"
+    android:layout_below="@+id/lldetails"
+    >
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="SIGN IN"
+            android:background="@drawable/button"
+            android:textColor="@color/white"
+            android:id="@+id/bsignin"
+          />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/llbutton"
+        android:id="@+id/llsignup"
+        android:layout_centerHorizontal="true"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:clickable="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvsignup"
+        android:text="@string/sign_up"
+        />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/llsignup"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/facebook"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:clickable="true"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:id="@+id/tvfbsignup"
+            android:text="@string/fbsign_up"
+            />
+        </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+</RelativeLayout>
