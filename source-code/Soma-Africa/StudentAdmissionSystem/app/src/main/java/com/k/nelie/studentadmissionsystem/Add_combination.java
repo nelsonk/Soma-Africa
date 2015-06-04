@@ -2,12 +2,20 @@ package com.k.nelie.studentadmissionsystem;
 
 import android.app.Activity;
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
+import android.util.AttributeSet;
+import android.view.InflateException;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -28,7 +36,7 @@ import java.util.List;
 public class Add_combination extends Activity implements View.OnClickListener, AdapterView.OnItemSelectedListener {
     EditText comb, cutoff;
     AutoCompleteTextView schname, coursetype;
-    Button add;
+    Button add,back;
     String username;
     Spinner types;
     SharedPreferences pref;
@@ -41,11 +49,12 @@ public class Add_combination extends Activity implements View.OnClickListener, A
         coursetype = (AutoCompleteTextView)findViewById(R.id.etadtype);
         comb = (EditText)findViewById(R.id.etadcomb);
         cutoff = (EditText)findViewById(R.id.etadcutoff);
+        back = (Button)findViewById(R.id.bback);
 
         schlist();
         coursetypes();
         add = (Button)findViewById(R.id.baddcomb);
-
+        back.setOnClickListener(this);
         add.setOnClickListener(this);
 
 
@@ -100,28 +109,36 @@ public class Add_combination extends Activity implements View.OnClickListener, A
 
     @Override
     public void onClick(View v) {
-        Uri newUri = null;
 
-        // Defines an object to contain the new values to insert
-        ContentValues newValues = new ContentValues();
+        if (v.getId() == R.id.bback) {
+            Intent i = new Intent(Add_combination.this, MainActivity.class);
+            startActivity(i);
+
+        }else {
+            Uri newUri = null;
+
+            // Defines an object to contain the new values to insert
+            ContentValues newValues = new ContentValues();
 
 // Sets the values of each column and inserts the word.
-        newValues.put(DbClass.COURSE_SCHNAME, schname.getText().toString());
-        newValues.put(DbClass.COURSE_COURSETYPE, coursetype.getText().toString());
-        newValues.put(DbClass.COURSE_COMBINATION, comb.getText().toString());
-        newValues.put(DbClass.COURSE_CUTOFF, cutoff.getText().toString());
+            newValues.put(DbClass.COURSE_SCHNAME, schname.getText().toString());
+            newValues.put(DbClass.COURSE_COURSETYPE, coursetype.getText().toString());
+            newValues.put(DbClass.COURSE_COMBINATION, comb.getText().toString());
+            newValues.put(DbClass.COURSE_CUTOFF, cutoff.getText().toString());
 
 
-        newUri = getContentResolver().insert(
-                MyDBContentProvider.COURSE_CONTENT_URI,   // the user dictionary content URI
-                newValues                          // the values to insert
-        );
+            newUri = getContentResolver().insert(
+                    MyDBContentProvider.COURSE_CONTENT_URI,   // the user dictionary content URI
+                    newValues                          // the values to insert
+            );
 
 
-    Toast.makeText(getBaseContext(), newUri.toString(), Toast.LENGTH_LONG).show();
-        Intent i = new Intent(Add_combination.this, MainActivity.class);
-       // i.putExtra("username", username);
-        startActivity(i);
+            Toast.makeText(getBaseContext(), newUri.toString(), Toast.LENGTH_LONG).show();
+            Intent i = new Intent(Add_combination.this, MainActivity.class);
+            // i.putExtra("username", username);
+            startActivity(i);
+
+        }
 
     }
 
@@ -138,6 +155,61 @@ public class Add_combination extends Activity implements View.OnClickListener, A
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(
+                R.menu.home, menu );
+        setMenuBackground();
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    private void setMenuBackground() {
+
+        getLayoutInflater().setFactory( new LayoutInflater.Factory() {
+
+            @Override
+            public View onCreateView ( String name, Context context, AttributeSet attrs ) {
+
+                if ( name.equalsIgnoreCase( "com.android.internal.view.menu.IconMenuItemView" ) ) {
+
+                    try { // Ask our inflater to create the view
+                        LayoutInflater f = getLayoutInflater();
+                        final View view = f.createView( name, null, attrs );
+                                        /*
+                                         * The background gets refreshed each time a new item is added the options menu.
+                                         * So each time Android applies the default background we need to set our own
+                                         * background. This is done using a thread giving the background change as runnable
+                                         * object
+                                         */
+                        new Handler().post( new Runnable() {
+                            public void run () {
+                                view.setBackgroundResource( R.drawable.menu_bg);
+                            }
+                        } );
+                        return view;
+                    }
+                    catch ( InflateException e ) {}
+                    catch ( ClassNotFoundException e ) {}
+                }
+                return null;
+            }
+        });
+    }
+
+    @Override
+    public boolean onMenuItemSelected(int featureId, MenuItem item) {
+
+        if (item.getItemId() == R.id.home) {
+            Intent i = new Intent(Add_combination.this, MainActivity.class);
+            startActivity(i);
+        }
+
+        return super.onMenuItemSelected(featureId, item);
+    }
+
 
 
     @Override

@@ -4,12 +4,27 @@
     android:layout_height="match_parent">
 
 
-    <View
-
+    <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="40sp"
-        android:id="@+id/v0"
-        android:background="#ff0b0daf"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ff0b0daf"
+        android:id="@+id/rlmenu"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:background="@drawable/button"
+            android:textColor="@color/white"
+            android:id="@+id/bback"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            />
+
+
+    </RelativeLayout>
 
 
     <TextView
@@ -21,7 +36,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:textColor="@color/blue"
-        android:layout_below="@+id/v0"
+        android:layout_below="@+id/rlmenu"
         android:id="@+id/tvcombination"
         android:layout_marginBottom="10dp"
         android:textSize="20dp"

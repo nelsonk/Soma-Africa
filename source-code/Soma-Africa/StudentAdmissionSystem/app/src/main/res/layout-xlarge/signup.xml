@@ -9,12 +9,27 @@
         android:orientation="vertical"
         >
 
-        <View
-
+        <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="60sp"
-            android:id="@+id/view0"
-            android:background="#ff0b0daf"/>
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ff0b0daf"
+            android:id="@+id/rlmenu"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:background="@drawable/button"
+                android:textColor="@color/white"
+                android:textSize="35dp"
+                android:id="@+id/bback"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                />
+
+        </RelativeLayout>
 
 
             <TextView
@@ -27,7 +42,7 @@
                 android:layout_marginTop="20dp"
                 android:id="@+id/tvcombination"
                 android:textColor="@color/blue"
-                android:layout_below="@+id/view0"
+                android:layout_below="@+id/rlmenu"
                 android:layout_marginBottom="20dp"
                 android:textSize="35dp"
                 />
