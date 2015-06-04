@@ -11,6 +11,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.InputType;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.InflateException;
@@ -291,6 +292,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Adap
         LayoutInflater li = LayoutInflater.from(this);
         View promptsView = li.inflate(R.layout.progress_alert_dialog, null);
         final EditText name = (EditText)promptsView.findViewById(R.id.etprog_alert);
+        name.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
         name.setHint("Enter Admin Password");
 
 
@@ -326,6 +328,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Adap
         LayoutInflater li = LayoutInflater.from(this);
         View promptsView = li.inflate(R.layout.progress_alert_dialog, null);
         final EditText name = (EditText)promptsView.findViewById(R.id.etprog_alert);
+        name.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
         name.setHint("Enter Admin Password");
 
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);

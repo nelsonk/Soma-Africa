@@ -10,10 +10,13 @@
         android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
         android:id="@+id/etprog_alert"
+        android:textStyle=""
         android:hint="Enter Username"
         android:textColor="@color/blue"
         android:textColorHint="@color/blue"
 
         />
+
+
 
 </RelativeLayout>
